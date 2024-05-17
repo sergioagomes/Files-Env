@@ -33,7 +33,8 @@ map("n", "<leader>uT", "<cmd>TransparentEnable<cr>", { desc = "Enable background
 map("n", "<leader>ut", "<cmd>TransparentToggle<cr>", { desc = "Toggle background transparency" })
 
 -- Terminal
-map("n", "<C-t>", "<cmd>Terminal(cwd)<cr>", { desc = "Open Terminal" })
+map("n", "<leader>tt", "<cmd>Terminal(cwd)<cr>", { desc = "Open Terminal" })
+
 
 -- mini.nvim
 map("n", "<leader>C", function()

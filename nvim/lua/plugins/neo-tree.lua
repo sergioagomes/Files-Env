@@ -5,7 +5,7 @@ return {
     {
       "<leader>fe",
       function()
-        require("neo-tree.command").execute({ toggle = true, dir = require("lazyvim.util").get_root() })
+        require("neo-tree.command").execute({ toggle = true, dir = require("lazyvim.util").root.get() })
       end,
       desc = "Explorer NeoTree (root dir)",
     },
@@ -16,8 +16,8 @@ return {
       end,
       desc = "Explorer NeoTree (cwd)",
     },
-    { "<leader>E", "<leader>fe", desc = "Explorer NeoTree (root dir)", remap = true },
-    { "<leader>e", "<leader>fE", desc = "Explorer NeoTree (cwd)", remap = true },
+    { "<leader>e", "<leader>fe", desc = "Explorer NeoTree (root dir)", remap = true },
+    { "<leader>E", "<leader>fE", desc = "Explorer NeoTree (cwd)", remap = true },
   },
   deactivate = function()
     vim.cmd([[Neotree close]])
@@ -37,6 +37,7 @@ return {
       bind_to_cwd = false,
       follow_current_file = { enabled = true },
       use_libuv_file_watcher = true,
+      hijack_netrw_behavior = "disabled",
     },
     commands = {
       system_open = function(state)
