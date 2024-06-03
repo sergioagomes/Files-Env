@@ -52,11 +52,12 @@ return {
         "graphql",
         "prisma",
         "regex",
-        "ocaml"
+        "rust",
+        "ocaml",
         "tsx",
         "typescript",
         "vim",
-        "vue"
+        "vue",
         "yaml",
       })
 

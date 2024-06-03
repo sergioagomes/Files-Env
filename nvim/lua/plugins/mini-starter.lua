@@ -4,10 +4,9 @@ return {
   event = "VimEnter",
   opts = function()
     local logo = table.concat({
-      "  O som dos sinos Gion Shōja ecoa a impermanência de todas as coisas; a cor das flores do sāla revela a verdade de que os prósperos deverão declinar. O orgulho não endurece, é como um sonho em uma noite de primavera; os poderosos caem no final, são como poeira perante o vento..   ",
-      "                                                                                                                                                                       "
-      "  Mas nós somos a exceção."
-      }, "\n")
+      "                                                                            ",
+      "               Mas nós somos a exceção                                      ",
+    }, "\n")
     local pad = string.rep(" ", 22)
     local new_section = function(name, action, section)
       return { name = name, action = action, section = pad .. section }
