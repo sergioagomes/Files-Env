@@ -35,7 +35,6 @@ map("n", "<leader>ut", "<cmd>TransparentToggle<cr>", { desc = "Toggle background
 -- Terminal
 map("n", "<leader>tt", "<cmd>Terminal(cwd)<cr>", { desc = "Open Terminal" })
 
-
 -- mini.nvim
 map("n", "<leader>C", function()
   require("mini.bufremove").delete(0, false)
